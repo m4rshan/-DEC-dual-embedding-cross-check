@@ -1,6 +1,8 @@
 # 📘 Dual Embedding Cross-Check (DEC)
 *A simple, low-cost method for LLM hallucination and drift detection using dual semantic spaces*
 
+The goal was to reduce compute while simultaneously increasing accuracy. To make a 20B parameter model as reliable as a 70B one. And give GPUs and RAM back to gamers. 
+
 ---
 
 ## ✨ Overview
