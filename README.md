@@ -172,8 +172,11 @@ def dec_compare(llm_embeddings, word_vectors, threshold=0.25):
 ```bibtex
 @article{m4rshan2025dec,
   title={Dual Embedding Cross-Check (DEC): A Lightweight Method for Detecting LLM Drift and Hallucination},
-  author={Raghav Kumar},
+  author={Raghvendran Kumar / Raghav Kumar},
   year={2025},
+  location={India},
+  affiliation={Independent Explorer}
+  email={raghavk.azp@gmail.com / raghavk.azp@outlook.com}
   note={Preprint},
 }
 ```
