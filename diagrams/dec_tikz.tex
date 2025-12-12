@@ -1,0 +1,15 @@
+\begin{tikzpicture}[node distance=2cm, auto]
+
+\tikzstyle{box} = [rectangle, rounded corners, draw=black, fill=blue!10, 
+                   text width=7cm, text centered, minimum height=1.2cm]
+
+\node[box] (transformer) {Transformer Embeddings (Dynamic Semantic Path)};
+\node[box, below of=transformer] (static) {Word Embeddings (Static Semantic Path)};
+\node[box, right of=transformer, xshift=5cm] (dec) {DEC Cross-Check};
+\node[box, right of=dec, xshift=4cm] (output) {Drift / Hallucination Score};
+
+\draw[->, thick] (transformer) -- (dec);
+\draw[->, thick] (static) -- (dec);
+\draw[->, thick] (dec) -- (output);
+
+\end{tikzpicture}
