@@ -204,7 +204,7 @@ These experiments can be run using open-source LLMs on modest hardware, enabling
 
 ## Implications for Training and Scaling
 
-- Faster, cheaper training via drift-aware regularization
+- Faster, cheaper training via improved curriculum design informed by semantic drift diagnostics
 - Improved reliability without increasing parameter count
 - Reduced catastrophic reasoning failures
 - Potential for smaller models to approach the reliability of much larger systems
@@ -247,6 +247,44 @@ Because DEC is non-invasive, it provides immediate benefits for already-deployed
 - cost-aware compute allocation
 - safer agent behavior
 - diagnostic insight for future optimization
+
+---
+## Design Principles and Integrity Constraints
+
+DEC is governed by a strict set of design principles intended to preserve long-term reliability, interpretability, and epistemic integrity. These principles define not only what DEC enables, but also what it explicitly forbids.
+
+### Observer–Actor Separation
+DEC operates strictly as an external, read-only instrument. It does not modify model weights, logits, token probabilities, training objectives, or inference behavior. Measurement and generation must remain causally isolated.
+
+### Prohibition of Self-Fulfilling Feedback
+No drift score, confidence signal, or stability metric produced by DEC may be fed back into the model as a training signal, optimization objective, or probabilistic modifier. Allowing systems to optimize against their own measurements risks self-fulfilling prophecy–based errors and long-term semantic corruption.
+
+Errors are acceptable. Integrity violations are not.
+
+### No Freezing of Semantic Meaning
+DEC does not impose fixed semantic interpretations (e.g., enforcing that “some” cannot become “all”). Instead, it monitors directional semantic drift along latent dimensions such as scope, certainty, and abstraction, preserving linguistic flexibility and contextual nuance.
+
+### Hallucination Is Not an Error Condition
+Hallucination is an unavoidable property of generative systems and a prerequisite for novelty. DEC does not attempt to eliminate hallucination; it exists to detect and bound *unchecked semantic instability* while preserving generative freedom.
+
+### Stop at Impossibility Boundaries
+DEC explicitly acknowledges that guarantees of correctness, truth, or perfect grounding are mathematically impossible in open-ended generative systems. The framework prioritizes visibility, bounded failure, and interpretability over unattainable certainty.
+
+---
+## DEC Across Pre-Training Stages and Data Chronology
+
+The order in which training data is presented during pre-training is a critical but underexplored control variable. Early exposure shapes foundational semantic axes and abstraction scaffolding that constrain all subsequent learning.
+
+DEC can be applied as a purely observational instrument during different stages of pre-training to study:
+
+- early semantic drift
+- premature abstraction collapse
+- over-entanglement of concepts
+- instability introduced by high-density domains too early in training
+
+Importantly, DEC does not intervene during training. Instead, it enables retrospective analysis of how data chronology and staging influence long-term semantic stability. Insights derived from such analysis can inform curriculum redesign between training runs, preserving causal clarity and preventing contamination of learning dynamics.
+
+This positions DEC as a diagnostic tool not only for deployed models, but also for understanding how reliable semantic structures emerge during training.
 
 ---
 
