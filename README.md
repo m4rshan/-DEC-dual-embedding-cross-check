@@ -310,8 +310,6 @@ This positions DEC as a diagnostic tool not only for deployed models, but also f
 
 Dual Embedding Cross-Check (DEC) introduces a simple yet powerful external reliability layer for LLMs by comparing dynamic embedding trajectories against stable semantic anchors. It detects semantic drift early, improves interpretability, reduces hallucination risk, and offers a path toward more compute-efficient and controllable AI systems — all without retraining or architectural modification.
 
-And if we get this right…  
-**maybe one day the GPUs and RAM can finally go back to the gamers.**
 
 ---
 
