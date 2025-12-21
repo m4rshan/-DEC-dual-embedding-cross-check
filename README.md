@@ -1,4 +1,4 @@
-# Dual Embedding Cross-Check (DEC)
+# Dual Embedding Cross-Check (DEC) This is a conceptual instrumentation scaffold — code exists only as a reasoning aid, not as an implementation claim.
 
 **A Lightweight Method for Improving LLM Reliability Using Static Semantic Anchors**
 
