@@ -1,11 +1,13 @@
-# Dual Embedding Cross-Check (DEC) This is a conceptual instrumentation scaffold — code exists only as a reasoning aid, not as an implementation claim.
+# Dual Embedding Cross-Check (DEC) 
 
-**A Lightweight Method for Improving LLM Reliability Using Static Semantic Anchors**
+**A Lightweight Method for Improving LLM Reliability Using Static Semantic Anchors** 
 
 **Author:** Raghvendran Kumar / Raghav Kumar  
 **Affiliation:** Independent Researcher  
 **Location:** Chennai, India  
 **Contact:** raghavk.azp@gmail.com / raghavk.azp@outlook.com  
+
+This is a conceptual instrumentation scaffold — code exists only as a reasoning aid, not as an implementation claim.
 
 📄 **Full Paper (PDF):**  
 `Dual Embedding Cross-Check (DEC)_ A Lightweight Method for Improving LLM Reliability Using Static Semantic Anchors.pdf`
