@@ -2,11 +2,6 @@
 
 **A Lightweight Method for Improving LLM Reliability Using Static Semantic Anchors** 
 
-**Author:** Raghvendran Kumar / Raghav Kumar  
-**Affiliation:** Independent Researcher  
-**Location:** Chennai, India  
-**Contact:** raghavk.azp@gmail.com / raghavk.azp@outlook.com  
-
 This is a conceptual instrumentation scaffold — code exists only as a reasoning aid, not as an implementation claim. This research is a work-in-progress.
 
 📄 **Full Paper (PDF):**  
@@ -318,3 +313,7 @@ Dual Embedding Cross-Check (DEC) introduces a simple yet powerful external relia
 *This work was written with the assistance of AI systems.  
 I am self-taught and not formally trained, and I learn by interacting with AI as a systems thinker.*
 
+**Author:** Raghvendran Kumar / Raghav Kumar  
+**Affiliation:** Independent Researcher  
+**Location:** Chennai, India  
+**Contact:** raghavk.azp@gmail.com
